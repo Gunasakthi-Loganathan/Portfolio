@@ -805,44 +805,43 @@ export default function App() {
           </div>
 
           <form
-            className="glass contact-form"
-            data-reveal
-            onSubmit={(e) => {
-              e.preventDefault();
-              alert("Thanks! I'll get back to you soon.");
-            }}
-          >
-            <div className="row-2">
-              <div className="field">
-                <label>Name</label>
-                <input required type="text" placeholder="Your name" />
-              </div>
+  className="glass contact-form"
+  data-reveal
+  action="https://formspree.io/f/xreddeng"
+  method="POST"
+>
+  <div className="row-2">
+    <div className="field">
+      <label>Name</label>
+      <input name="name" required type="text" placeholder="Your name" />
+    </div>
 
-              <div className="field">
-                <label>Email</label>
-                <input required type="email" placeholder="you@email.com" />
-              </div>
-            </div>
+    <div className="field">
+      <label>Email</label>
+      <input name="email" required type="email" placeholder="you@email.com" />
+    </div>
+  </div>
 
-            <div className="field">
-              <label>Subject</label>
-              <input required type="text" placeholder="What's this about?" />
-            </div>
+  <div className="field">
+    <label>Subject</label>
+    <input name="subject" required type="text" placeholder="What's this about?" />
+  </div>
 
-            <div className="field">
-              <label>Message</label>
-              <textarea
-                required
-                rows="5"
-                placeholder="Tell me a bit about your project or opportunity..."
-              ></textarea>
-            </div>
+  <div className="field">
+    <label>Message</label>
+    <textarea
+      name="message"
+      required
+      rows="5"
+      placeholder="Tell me a bit about your project or opportunity..."
+    ></textarea>
+  </div>
 
-            <button className="btn btn-primary btn-lg" type="submit">
-              <iconify-icon icon="solar:plain-linear" width="18"></iconify-icon>
-              Send Message
-            </button>
-          </form>
+  <button className="btn btn-primary btn-lg" type="submit">
+    <iconify-icon icon="solar:plain-linear" width="18"></iconify-icon>
+    Send Message
+  </button>
+</form>
         </div>
       </section>
 
@@ -854,7 +853,7 @@ export default function App() {
 
             <div>
               <div className="foot-name">GUNASAKTHI L</div>
-              <div className="foot-sub">Software Developer · AI & ML</div>
+              <div className="foot-sub">Full Stack Developer · AI & ML</div>
             </div>
           </div>
 
@@ -884,7 +883,7 @@ export default function App() {
         </div>
 
         <div className="foot-bottom">
-          © 2026 GUNASAKTHI L. Built with passion for software, AI, and innovation.
+          © GUNASAKTHI LOGANATHAN. Built with passion for software, AI, and innovation.
         </div>
       </footer>
     </div>
