@@ -94,7 +94,7 @@ const PROJECTS = [
   {
     title: "AI Image to Text OCR System using Tesseract.js",
     desc:
-      "Developed a web-based OCR system that extracts text from images using Tesseract.js...",
+      "Built an OCR web app using React, Vite, FastAPI, Tesseract.js, TrOCR, and GOT-OCR to extract text from images and handwritten documents. Added browser OCR and backend AI model support for flexible text recognition.",
     tech: [
       "React.js",
       "JavaScript",
@@ -115,7 +115,7 @@ const PROJECTS = [
   {
     title: "Machine Learning & Data Analytics",
     desc:
-      "During my internship at GTS Company, I worked on Machine Learning and Data Analytics projects using Python...",
+      "During my internship at GTS Company, I worked on Machine Learning and Data Analytics projects using Python to implement the techniques on real time datas.",
     tech: [
       "Python",
       "Pandas",
@@ -134,7 +134,7 @@ const PROJECTS = [
   },
   {
     title: "SAFEHEX - Integrity Framework",
-    desc: "Web-based project designed to analyze and manage scan results...",
+    desc: "Developed a cybersecurity dashboard using React, TypeScript, Tailwind CSS, and Convex for ethical target validation, CVSS-based risk classification, vulnerability analysis, scan history, and CSV report export.",
     tech: ["React.js", "JavaScript", "HTML", "CSS", "Tailwind CSS", "Convex", "TypeScript"],
     icon: "solar:monitor-smartphone-linear",
     gradient: "from-emerald-500/30 via-cyan-500/20 to-blue-500/30",
@@ -410,7 +410,7 @@ export default function App() {
             />
 
             <h3>Gunasakthi Loganathan</h3>
-            <p>Software Developer · AI & ML Undergraduate</p>
+            <p>Full Stack Developer · AI & ML Undergraduate</p>
           </div>
         </div>
       )}
@@ -472,7 +472,7 @@ export default function App() {
 
             <a
               className="btn btn-ghost"
-              href="https://drive.google.com/uc?export=download&id=1YeEbukR2j7oPdHMJrVTkhQuaitYxVODZ"
+              href="https://drive.google.com/uc?export=download&id=1gAPhayegeoKsKA84Q9HvzicGPAfRclv3"
               target="_blank"
               rel="noopener noreferrer"
             >
