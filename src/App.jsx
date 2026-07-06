@@ -104,11 +104,11 @@ const PROJECTS = [
     icon: "solar:global-linear",
     gradient: "from-orange-500/30 via-red-500/20 to-yellow-500/30",
     github: "https://github.com/Gunasakthi-Loganathan/translation-project",
+    liveLink: "https://translation-project-wheat.vercel.app/",
   },
   {
     title: "AI Image to Text OCR System using Tesseract.js",
-    desc:
-      "Built an OCR web app using React, Vite, FastAPI, Tesseract.js, TrOCR, and GOT-OCR to extract text from images and handwritten documents. Added browser OCR and backend AI model support for flexible text recognition.",
+    desc: "Built an OCR web app using React, Vite, FastAPI, Tesseract.js, TrOCR, and GOT-OCR to extract text from images and handwritten documents. Added browser OCR and backend AI model support for flexible text recognition.",
     tech: [
       "React.js",
       "JavaScript",
@@ -123,13 +123,12 @@ const PROJECTS = [
     ],
     icon: "solar:document-text-linear",
     gradient: "from-cyan-500/30 via-blue-500/20 to-purple-500/30",
-    github:
-      "https://github.com/Gunasakthi-Loganathan/ROCT-recognition-of-characters-using-Tesseract",
+    github: "https://github.com/Gunasakthi-Loganathan/ROCT-recognition-of-characters-using-Tesseract",
+    liveLink: "https://roct-recognition-of-characters-usin.vercel.app/",
   },
   {
     title: "Machine Learning & Data Analytics",
-    desc:
-      "During my internship at GTS Company, I worked on Machine Learning and Data Analytics projects using Python to implement the techniques on real time datas.",
+    desc: "During my internship at GTS Company, I worked on Machine Learning and Data Analytics projects using Python to implement the techniques on real time datas.",
     tech: [
       "Python",
       "Pandas",
@@ -143,8 +142,7 @@ const PROJECTS = [
     ],
     icon: "solar:chart-2-linear",
     gradient: "from-purple-500/30 via-pink-500/20 to-blue-500/30",
-    github:
-      "https://github.com/Gunasakthi-Loganathan/Machine-Learning-Data-Analytics-GTS-Internship-",
+    github: "https://github.com/Gunasakthi-Loganathan/Machine-Learning-Data-Analytics-GTS-Internship-",
   },
   {
     title: "SAFEHEX - Integrity Framework",
@@ -153,6 +151,7 @@ const PROJECTS = [
     icon: "solar:monitor-smartphone-linear",
     gradient: "from-emerald-500/30 via-cyan-500/20 to-blue-500/30",
     github: "https://github.com/Gunasakthi-Loganathan/SAFEHEX_project",
+    liveLink: "https://safehex-project.vercel.app/",
   },
 ];
 
@@ -180,16 +179,14 @@ const EXPERIENCE = [
     title: "ML & Data Analytics using Python",
     org: "Global Techno Solutions, Ashok Nagar, Chennai",
     date: "June 2025",
-    desc:
-      "Completed internship training focused on machine learning, Python-based data analytics, preprocessing, and model development.",
+    desc: "Completed internship training focused on machine learning, Python-based data analytics, preprocessing, and model development.",
     icon: "solar:cpu-linear",
   },
   {
     title: "UI/UX Designer",
     org: "Kubbera, IIT Madras, Chennai",
     date: "Feb 11, 2026 – May 12, 2026",
-    desc:
-      "Worked on user interface and user experience design, focusing on clean layouts, usability, design consistency, and user-centered digital experiences.",
+    desc: "Worked on user interface and user experience design, focusing on clean layouts, usability, design consistency, and user-centered digital experiences.",
     icon: "solar:palette-linear",
   },
 ];
@@ -639,10 +636,18 @@ export default function App() {
                 </div>
 
                 <div className="project-actions">
-                  <button className="btn btn-sm btn-primary">
-                    <iconify-icon icon="solar:eye-linear" width="16"></iconify-icon>
-                    View Details
-                  </button>
+                  {/* Conditionally render the View Project button if liveLink exists */}
+                  {p.liveLink && (
+                    <a 
+                      className="btn btn-sm btn-primary" 
+                      href={p.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <iconify-icon icon="solar:eye-linear" width="16"></iconify-icon>
+                      View Project
+                    </a>
+                  )}
 
                   <a
                     className="btn btn-sm btn-outline"
@@ -819,43 +824,43 @@ export default function App() {
           </div>
 
           <form
-  className="glass contact-form"
-  data-reveal
-  action="https://formspree.io/f/xreddeng"
-  method="POST"
->
-  <div className="row-2">
-    <div className="field">
-      <label>Name</label>
-      <input name="name" required type="text" placeholder="Your name" />
-    </div>
+            className="glass contact-form"
+            data-reveal
+            action="https://formspree.io/f/xreddeng"
+            method="POST"
+          >
+            <div className="row-2">
+              <div className="field">
+                <label>Name</label>
+                <input name="name" required type="text" placeholder="Your name" />
+              </div>
 
-    <div className="field">
-      <label>Email</label>
-      <input name="email" required type="email" placeholder="you@email.com" />
-    </div>
-  </div>
+              <div className="field">
+                <label>Email</label>
+                <input name="email" required type="email" placeholder="you@email.com" />
+              </div>
+            </div>
 
-  <div className="field">
-    <label>Subject</label>
-    <input name="subject" required type="text" placeholder="What's this about?" />
-  </div>
+            <div className="field">
+              <label>Subject</label>
+              <input name="subject" required type="text" placeholder="What's this about?" />
+            </div>
 
-  <div className="field">
-    <label>Message</label>
-    <textarea
-      name="message"
-      required
-      rows="5"
-      placeholder="Tell me a bit about your project or opportunity..."
-    ></textarea>
-  </div>
+            <div className="field">
+              <label>Message</label>
+              <textarea
+                name="message"
+                required
+                rows="5"
+                placeholder="Tell me a bit about your project or opportunity..."
+              ></textarea>
+            </div>
 
-  <button className="btn btn-primary btn-lg" type="submit">
-    <iconify-icon icon="solar:plain-linear" width="18"></iconify-icon>
-    Send Message
-  </button>
-</form>
+            <button className="btn btn-primary btn-lg" type="submit">
+              <iconify-icon icon="solar:plain-linear" width="18"></iconify-icon>
+              Send Message
+            </button>
+          </form>
         </div>
       </section>
 
