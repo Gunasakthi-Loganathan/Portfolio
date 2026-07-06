@@ -551,7 +551,7 @@ export default function App() {
           <div className="about-stats">
             {[
               { v: "8.02", l: "Current CGPA", i: "solar:medal-star-linear" },
-              { v: "3+", l: "Featured Projects", i: "solar:widget-5-linear" },
+              { v: "4", l: "Featured Projects", i: "solar:widget-5-linear" },
               { v: "25+", l: "Technologies", i: "solar:layers-linear" },
               { v: "2027", l: "Graduating", i: "solar:calendar-linear" },
             ].map((s, i) => (
