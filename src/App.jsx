@@ -92,6 +92,20 @@ const SKILLS = [
 
 const PROJECTS = [
   {
+    title: "Language Translation App",
+    desc: "A seamless translation application designed to accurately convert text between multiple languages. Built with a focus on real-time processing and a clean, accessible user interface.",
+    tech: [
+      "React.js",
+      "JavaScript",
+      "API Integration",
+      "Tailwind CSS",
+      "Node.js"
+    ],
+    icon: "solar:global-linear",
+    gradient: "from-orange-500/30 via-red-500/20 to-yellow-500/30",
+    github: "https://github.com/Gunasakthi-Loganathan/translation-project",
+  },
+  {
     title: "AI Image to Text OCR System using Tesseract.js",
     desc:
       "Built an OCR web app using React, Vite, FastAPI, Tesseract.js, TrOCR, and GOT-OCR to extract text from images and handwritten documents. Added browser OCR and backend AI model support for flexible text recognition.",
