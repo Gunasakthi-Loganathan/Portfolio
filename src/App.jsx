@@ -758,8 +758,9 @@ export default function App() {
       <section id="contact" className="section">
         <SectionHeader kicker="Get in touch" title="Let's build something together" />
 
-        <div className="contact-grid">
-          <div className="glass contact-info" data-reveal>
+        {/* Wrapped in a flex container to center the card perfectly */}
+        <div style={{ display: "flex", justifyContent: "center", padding: "0 20px" }}>
+          <div className="glass contact-info" data-reveal style={{ maxWidth: "600px", width: "100%" }}>
             <h3>Contact Information</h3>
             <p>
               Open to internships, collaborations, and interesting AI/ML or software
@@ -822,45 +823,6 @@ export default function App() {
               </li>
             </ul>
           </div>
-
-          <form
-            className="glass contact-form"
-            data-reveal
-            action="https://formspree.io/f/xreddeng"
-            method="POST"
-          >
-            <div className="row-2">
-              <div className="field">
-                <label>Name</label>
-                <input name="name" required type="text" placeholder="Your name" />
-              </div>
-
-              <div className="field">
-                <label>Email</label>
-                <input name="email" required type="email" placeholder="you@email.com" />
-              </div>
-            </div>
-
-            <div className="field">
-              <label>Subject</label>
-              <input name="subject" required type="text" placeholder="What's this about?" />
-            </div>
-
-            <div className="field">
-              <label>Message</label>
-              <textarea
-                name="message"
-                required
-                rows="5"
-                placeholder="Tell me a bit about your project or opportunity..."
-              ></textarea>
-            </div>
-
-            <button className="btn btn-primary btn-lg" type="submit">
-              <iconify-icon icon="solar:plain-linear" width="18"></iconify-icon>
-              Send Message
-            </button>
-          </form>
         </div>
       </section>
 
